@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Signature Verification System</h1>
+        <form id="verificationForm">
+            <div class="upload-section">
+                <div class="upload-field">
+                    <label for="originalSignature">Upload Original Signature:</label>
+                    <input type="file" id="originalSignature" name="originalSignature" accept="image/*" required>
+                </div>
+                <div class="upload-field">
+                    <label for="forgedSignature">Upload Forged Signature:</label>
+                    <input type="file" id="forgedSignature" name="forgedSignature" accept="image/*" required>
+                </div>
+            </div>
+            <button type="submit">Verify Signatures</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
